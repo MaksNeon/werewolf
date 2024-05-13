@@ -59,9 +59,16 @@ namespace LoupGarou
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            maitreDuJeux.username.Add(txboxNomAdd.Text);
-            listViewUsername.Items.Add(txboxNomAdd.Text);
-            panelAdd.Hide();
+            if (!String.IsNullOrEmpty(txboxNomAdd.Text))
+            {
+                maitreDuJeux.username.Add(txboxNomAdd.Text);
+                listViewUsername.Items.Add(txboxNomAdd.Text);
+                panelAdd.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Veuillez saisir le nom du joueur.");
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)

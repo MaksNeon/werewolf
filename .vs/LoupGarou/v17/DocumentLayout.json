@@ -1,38 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\",
+  "WorkspaceRootPath": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\loupgarou\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\sorici\u00E8re.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\sorici\u00E8re.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\villageois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\villageois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\cupidon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\loupgarou\\cupidon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\cupidon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\fauza\\documents\\github\\werewolf\\loupgarou\\maitredujeux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\loupgarou\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\loupgarou\\maitredujeux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\maitredujeux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|c:\\users\\ptysi\\documents\\github\\werewolf\\loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\formlistvillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\loupgarou\\sorici\u00E8re.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\sorici\u00E8re.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\loupgarou\\villageois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95E4A222-4C4B-40FF-97AB-36E3097485A5}|LoupGarou\\LoupGarou.csproj|solutionrelative:loupgarou\\villageois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,15 +42,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs",
               "RelativeDocumentMoniker": "LoupGarou\\Form1.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs [Design]",
               "RelativeToolTip": "LoupGarou\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T20:26:16.202Z",
@@ -59,63 +59,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Cupidon.cs",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Cupidon.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Cupidon.cs",
               "RelativeDocumentMoniker": "LoupGarou\\Cupidon.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Cupidon.cs",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Cupidon.cs",
               "RelativeToolTip": "LoupGarou\\Cupidon.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA6wB0AAAA8AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwB0AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T20:44:29.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Villageois.cs",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Villageois.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Villageois.cs",
               "RelativeDocumentMoniker": "LoupGarou\\Villageois.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Villageois.cs",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Villageois.cs",
               "RelativeToolTip": "LoupGarou\\Villageois.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAQwDsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T21:18:12.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T21:18:12.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Sorici\u00E8re.cs",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Sorici\u00E8re.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Sorici\u00E8re.cs",
               "RelativeDocumentMoniker": "LoupGarou\\Sorici\u00E8re.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Sorici\u00E8re.cs",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Sorici\u00E8re.cs",
               "RelativeToolTip": "LoupGarou\\Sorici\u00E8re.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAhwCAAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T21:17:34.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T21:17:34.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FormListVillage.cs",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs",
               "RelativeDocumentMoniker": "LoupGarou\\FormListVillage.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs",
               "RelativeToolTip": "LoupGarou\\FormListVillage.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAArwBMAAAAOAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAArwBYAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T20:56:37.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FormListVillage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs",
               "RelativeDocumentMoniker": "LoupGarou\\FormListVillage.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs [Design]",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\FormListVillage.cs [Design]",
               "RelativeToolTip": "LoupGarou\\FormListVillage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T20:55:14.258Z",
@@ -123,26 +121,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs",
               "RelativeDocumentMoniker": "LoupGarou\\Form1.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\Form1.cs",
               "RelativeToolTip": "LoupGarou\\Form1.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAADgv2oAAAAMAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAlwDQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T20:26:17.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "MaitreDuJeux.cs",
-              "DocumentMoniker": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\MaitreDuJeux.cs",
+              "DocumentMoniker": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\MaitreDuJeux.cs",
               "RelativeDocumentMoniker": "LoupGarou\\MaitreDuJeux.cs",
-              "ToolTip": "C:\\Users\\fauza\\Documents\\GitHub\\werewolf\\LoupGarou\\MaitreDuJeux.cs",
+              "ToolTip": "C:\\Users\\ptysi\\Documents\\GitHub\\werewolf\\LoupGarou\\MaitreDuJeux.cs",
               "RelativeToolTip": "LoupGarou\\MaitreDuJeux.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAxwGoAAAANAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAiwGoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T20:25:12.738Z",
               "EditorCaption": ""
