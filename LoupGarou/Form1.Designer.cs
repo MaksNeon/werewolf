@@ -71,7 +71,7 @@
             listViewItem1});
             this.listViewVillage.Location = new System.Drawing.Point(586, 12);
             this.listViewVillage.Name = "listViewVillage";
-            this.listViewVillage.Size = new System.Drawing.Size(202, 426);
+            this.listViewVillage.Size = new System.Drawing.Size(202, 312);
             this.listViewVillage.TabIndex = 1;
             this.listViewVillage.UseCompatibleStateImageBehavior = false;
             this.listViewVillage.SelectedIndexChanged += new System.EventHandler(this.listViewVillage_SelectedIndexChanged);
@@ -154,9 +154,11 @@
             listViewItem2});
             this.listViewUsername.Location = new System.Drawing.Point(378, 12);
             this.listViewUsername.Name = "listViewUsername";
-            this.listViewUsername.Size = new System.Drawing.Size(202, 426);
+            this.listViewUsername.Size = new System.Drawing.Size(202, 312);
+            this.listViewUsername.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewUsername.TabIndex = 6;
             this.listViewUsername.UseCompatibleStateImageBehavior = false;
+            this.listViewUsername.SelectedIndexChanged += new System.EventHandler(this.listViewUsername_SelectedIndexChanged);
             // 
             // LoupGarou
             // 

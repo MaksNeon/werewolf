@@ -91,6 +91,7 @@ namespace LoupGarou
                 timerRefreshList.Stop();
                 maitreDuJeux.StartGame();
             }
+            btnStart.Enabled = false;
             
         }
 
@@ -115,6 +116,11 @@ namespace LoupGarou
             {
                 listViewVillage.Items.Add(nom.nom);
             }
+        }
+
+        private void listViewUsername_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblRoleSelect = listViewUsername.CheckedItems.;
         }
     }
 }

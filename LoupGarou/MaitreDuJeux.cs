@@ -74,7 +74,7 @@ namespace LoupGarou
 
                 if (GameEnd)
                 {
-
+                    
                 }
                 else
                 {
@@ -183,7 +183,7 @@ namespace LoupGarou
             foreach (Cupidon cupidon in ListCupidon)
             {
                 cupidon.EstVeillés = true;
-                cupidon.DesignerAmoureux(Village, random.Next(0, 7), random.Next(8, 14));
+                cupidon.DesignerAmoureux(Village, random.Next(0, 7), random.Next(7, 13));
                 cupidon.EstVeillés = false;
                 WakeUp(cupidon.Amoureux[0]);
                 WakeUp(cupidon.Amoureux[1]);
