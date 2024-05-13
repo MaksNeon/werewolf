@@ -75,6 +75,7 @@ namespace LoupGarou
         private void btnAdd_Click(object sender, EventArgs e)
         {
             maitreDuJeux.username.Add(txboxNomAdd.Text);
+            listViewUsername.Items.Add(txboxNomAdd.Text);
             panelAdd.Hide();
         }
 

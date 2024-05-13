@@ -8,3 +8,13 @@ D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.csproj.CoreCompileInputs.cache
 D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.exe
 D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.pdb
 D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.LoupGarou.resources
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\bin\Debug\LoupGarou.exe.config
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\bin\Debug\LoupGarou.exe
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\bin\Debug\LoupGarou.pdb
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.csproj.AssemblyReference.cache
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.LoupGarou.resources
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.Properties.Resources.resources
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.csproj.GenerateResource.cache
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.csproj.CoreCompileInputs.cache
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.exe
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.pdb

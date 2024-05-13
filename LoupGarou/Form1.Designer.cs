@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.btnAjouterJoueur = new System.Windows.Forms.Button();
             this.timerRefreshList = new System.Windows.Forms.Timer(this.components);
             this.listViewVillage = new System.Windows.Forms.ListView();
@@ -40,6 +41,7 @@
             this.lblNomAdd = new System.Windows.Forms.Label();
             this.txboxNomAdd = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
+            this.listViewUsername = new System.Windows.Forms.ListView();
             this.panelAdd.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             this.listViewVillage.HotTracking = true;
             this.listViewVillage.HoverSelection = true;
             this.listViewVillage.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem1});
             this.listViewVillage.Location = new System.Drawing.Point(586, 12);
             this.listViewVillage.Name = "listViewVillage";
             this.listViewVillage.Size = new System.Drawing.Size(202, 426);
@@ -77,20 +79,20 @@
             // lblYourRole
             // 
             this.lblYourRole.AutoSize = true;
-            this.lblYourRole.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYourRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYourRole.Location = new System.Drawing.Point(9, 9);
             this.lblYourRole.Name = "lblYourRole";
-            this.lblYourRole.Size = new System.Drawing.Size(100, 31);
+            this.lblYourRole.Size = new System.Drawing.Size(124, 31);
             this.lblYourRole.TabIndex = 2;
             this.lblYourRole.Text = "Vous: ...";
             // 
             // lblRoleSelect
             // 
             this.lblRoleSelect.AutoSize = true;
-            this.lblRoleSelect.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoleSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoleSelect.Location = new System.Drawing.Point(9, 50);
             this.lblRoleSelect.Name = "lblRoleSelect";
-            this.lblRoleSelect.Size = new System.Drawing.Size(145, 31);
+            this.lblRoleSelect.Size = new System.Drawing.Size(173, 31);
             this.lblRoleSelect.TabIndex = 3;
             this.lblRoleSelect.Text = "Role: Aucun";
             // 
@@ -102,12 +104,12 @@
             this.panelAdd.Controls.Add(this.txboxNomAdd);
             this.panelAdd.Location = new System.Drawing.Point(12, 157);
             this.panelAdd.Name = "panelAdd";
-            this.panelAdd.Size = new System.Drawing.Size(568, 125);
+            this.panelAdd.Size = new System.Drawing.Size(238, 125);
             this.panelAdd.TabIndex = 4;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(490, 99);
+            this.btnAdd.Location = new System.Drawing.Point(160, 99);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
@@ -134,19 +136,34 @@
             // btnStart
             // 
             this.btnStart.Enabled = false;
-            this.btnStart.Location = new System.Drawing.Point(424, 115);
+            this.btnStart.Location = new System.Drawing.Point(12, 288);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(156, 36);
+            this.btnStart.Size = new System.Drawing.Size(238, 36);
             this.btnStart.TabIndex = 5;
             this.btnStart.Text = "Commencez";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // listViewUsername
+            // 
+            this.listViewUsername.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.listViewUsername.HideSelection = false;
+            this.listViewUsername.HotTracking = true;
+            this.listViewUsername.HoverSelection = true;
+            this.listViewUsername.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem2});
+            this.listViewUsername.Location = new System.Drawing.Point(378, 12);
+            this.listViewUsername.Name = "listViewUsername";
+            this.listViewUsername.Size = new System.Drawing.Size(202, 426);
+            this.listViewUsername.TabIndex = 6;
+            this.listViewUsername.UseCompatibleStateImageBehavior = false;
             // 
             // LoupGarou
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listViewUsername);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panelAdd);
             this.Controls.Add(this.lblRoleSelect);
@@ -175,6 +192,7 @@
         private System.Windows.Forms.Label lblNomAdd;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.ListView listViewUsername;
     }
 }
 
