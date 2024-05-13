@@ -16,51 +16,36 @@ namespace LoupGarou
     {
         public List<Villageois> village = new List<Villageois>();
         public MaitreDuJeux maitreDuJeux = new MaitreDuJeux();
-        
+
         //private List<Villageois> _village;
         public LoupGarou()
         {
             InitializeComponent();
             //this._village = village;
             Thread.Sleep(200);
-            lblYourRole.Text ="Vous: Maitre du jeux";
+            lblYourRole.Text = "Vous: Maitre du jeux";
             timerRefreshList.Start();
             panelAdd.Hide();
 
         }
 
-        public void BindDataToListView()
+        public List<Villageois> Village
         {
-            // Effacez les éléments existants du ListView
-            listViewVillage.Items.Clear();
-
-            // Parcourez la liste Village de MaitreDuJeux et ajoutez chaque élément à ListView
-            foreach (Villageois villageois in maitreDuJeux.GetVillage)
+            get
             {
-                // Créez un nouvel élément de ListView avec le nom du villageois
-                ListViewItem item = new ListViewItem(villageois.nom);
-
-                // Ajoutez l'élément à ListView
-                listViewVillage.Items.Add(item);
+                return village;
             }
-
-            // Optionnel : Ajustez la mise en forme de ListView si nécessaire
-            // Par exemple, vous pouvez ajuster les colonnes, les en-têtes, etc.
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //foreach (Villageois n in _village)
             //{
-                //Console.WriteLine(n.nom);
+            //Console.WriteLine(n.nom);
             //    MessageBox.Show(n.nom);
             //}
         }
 
-        private void timerRefreshList_Tick(object sender, EventArgs e)
-        {
-            BindDataToListView();
-        }   
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -82,7 +67,7 @@ namespace LoupGarou
         private void btnStart_Click(object sender, EventArgs e)
         {
             maitreDuJeux.CréeVillage(maitreDuJeux.username);
-            if (maitreDuJeux.Village.Count>14)
+            if (maitreDuJeux.Village.Count > 14)
             {
 
             }
@@ -92,7 +77,7 @@ namespace LoupGarou
                 maitreDuJeux.StartGame();
             }
             btnStart.Enabled = false;
-            
+
         }
 
         private void listViewVillage_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,7 +87,7 @@ namespace LoupGarou
 
         private void timerRefreshList_Tick_1(object sender, EventArgs e)
         {
-            if (maitreDuJeux.username.Count<15)
+            if (maitreDuJeux.username.Count < 15)
             {
                 btnStart.Enabled = false;
             }
@@ -110,17 +95,17 @@ namespace LoupGarou
             {
                 btnStart.Enabled = true;
             }
-            listViewVillage.Items.Clear();
-
-            foreach (Villageois nom in maitreDuJeux.Village)
-            {
-                listViewVillage.Items.Add(nom.nom);
-            }
         }
 
         private void listViewUsername_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblRoleSelect = listViewUsername.CheckedItems.;
+        }
+
+        //ICI negro
+        private void btnListVillageois_Click(object sender, EventArgs e)
+        {
+            FormListVillage formListVillage = new FormListVillage(maitreDuJeux.Village);
+            formListVillage.ShowDialog();
         }
     }
 }

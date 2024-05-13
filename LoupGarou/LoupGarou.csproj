@@ -51,6 +51,12 @@
   <ItemGroup>
     <Compile Include="Cupidon.cs" />
     <Compile Include="Amoureux.cs" />
+    <Compile Include="FormListVillage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListVillage.Designer.cs">
+      <DependentUpon>FormListVillage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MaitreDuJeux.cs" />
     <Compile Include="Soricière.cs" />
     <Compile Include="Form1.cs">
@@ -65,6 +71,9 @@
     <Compile Include="Villageois.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListVillage.resx">
+      <DependentUpon>FormListVillage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.btnAjouterJoueur = new System.Windows.Forms.Button();
             this.timerRefreshList = new System.Windows.Forms.Timer(this.components);
-            this.listViewVillage = new System.Windows.Forms.ListView();
             this.lblYourRole = new System.Windows.Forms.Label();
-            this.lblRoleSelect = new System.Windows.Forms.Label();
             this.panelAdd = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblNomAdd = new System.Windows.Forms.Label();
             this.txboxNomAdd = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.listViewUsername = new System.Windows.Forms.ListView();
+            this.btnListVillageois = new System.Windows.Forms.Button();
             this.panelAdd.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,21 +59,6 @@
             this.timerRefreshList.Interval = 150;
             this.timerRefreshList.Tick += new System.EventHandler(this.timerRefreshList_Tick_1);
             // 
-            // listViewVillage
-            // 
-            this.listViewVillage.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listViewVillage.HideSelection = false;
-            this.listViewVillage.HotTracking = true;
-            this.listViewVillage.HoverSelection = true;
-            this.listViewVillage.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listViewVillage.Location = new System.Drawing.Point(586, 12);
-            this.listViewVillage.Name = "listViewVillage";
-            this.listViewVillage.Size = new System.Drawing.Size(202, 312);
-            this.listViewVillage.TabIndex = 1;
-            this.listViewVillage.UseCompatibleStateImageBehavior = false;
-            this.listViewVillage.SelectedIndexChanged += new System.EventHandler(this.listViewVillage_SelectedIndexChanged);
-            // 
             // lblYourRole
             // 
             this.lblYourRole.AutoSize = true;
@@ -85,16 +68,6 @@
             this.lblYourRole.Size = new System.Drawing.Size(124, 31);
             this.lblYourRole.TabIndex = 2;
             this.lblYourRole.Text = "Vous: ...";
-            // 
-            // lblRoleSelect
-            // 
-            this.lblRoleSelect.AutoSize = true;
-            this.lblRoleSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoleSelect.Location = new System.Drawing.Point(9, 50);
-            this.lblRoleSelect.Name = "lblRoleSelect";
-            this.lblRoleSelect.Size = new System.Drawing.Size(173, 31);
-            this.lblRoleSelect.TabIndex = 3;
-            this.lblRoleSelect.Text = "Role: Aucun";
             // 
             // panelAdd
             // 
@@ -151,8 +124,8 @@
             this.listViewUsername.HotTracking = true;
             this.listViewUsername.HoverSelection = true;
             this.listViewUsername.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
-            this.listViewUsername.Location = new System.Drawing.Point(378, 12);
+            listViewItem4});
+            this.listViewUsername.Location = new System.Drawing.Point(268, 9);
             this.listViewUsername.Name = "listViewUsername";
             this.listViewUsername.Size = new System.Drawing.Size(202, 312);
             this.listViewUsername.Sorting = System.Windows.Forms.SortOrder.Ascending;
@@ -160,17 +133,26 @@
             this.listViewUsername.UseCompatibleStateImageBehavior = false;
             this.listViewUsername.SelectedIndexChanged += new System.EventHandler(this.listViewUsername_SelectedIndexChanged);
             // 
+            // btnListVillageois
+            // 
+            this.btnListVillageois.Location = new System.Drawing.Point(367, 327);
+            this.btnListVillageois.Name = "btnListVillageois";
+            this.btnListVillageois.Size = new System.Drawing.Size(103, 23);
+            this.btnListVillageois.TabIndex = 8;
+            this.btnListVillageois.Text = "List des villageois";
+            this.btnListVillageois.UseVisualStyleBackColor = true;
+            this.btnListVillageois.Click += new System.EventHandler(this.btnListVillageois_Click);
+            // 
             // LoupGarou
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(482, 432);
+            this.Controls.Add(this.btnListVillageois);
             this.Controls.Add(this.listViewUsername);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panelAdd);
-            this.Controls.Add(this.lblRoleSelect);
             this.Controls.Add(this.lblYourRole);
-            this.Controls.Add(this.listViewVillage);
             this.Controls.Add(this.btnAjouterJoueur);
             this.Name = "LoupGarou";
             this.ShowIcon = false;
@@ -186,15 +168,14 @@
 
         private System.Windows.Forms.Button btnAjouterJoueur;
         private System.Windows.Forms.Timer timerRefreshList;
-        private System.Windows.Forms.ListView listViewVillage;
         private System.Windows.Forms.Label lblYourRole;
-        private System.Windows.Forms.Label lblRoleSelect;
         private System.Windows.Forms.Panel panelAdd;
         private System.Windows.Forms.TextBox txboxNomAdd;
         private System.Windows.Forms.Label lblNomAdd;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.ListView listViewUsername;
+        private System.Windows.Forms.Button btnListVillageois;
     }
 }
 

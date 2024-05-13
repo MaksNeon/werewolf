@@ -18,3 +18,4 @@ C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.csproj.Ge
 C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.csproj.CoreCompileInputs.cache
 C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.exe
 C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.pdb
+C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.FormListVillage.resources

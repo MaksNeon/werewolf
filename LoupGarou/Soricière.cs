@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
@@ -29,7 +30,7 @@ namespace LoupGarou
         /// <param name="potion"></param>
         /// <param name="cibleIndex"></param>
         /// <param name="Village"></param>
-        public void UtiliserPotions(int potion, int cibleIndex, List<Villageois> Village)
+        public void UtiliserPotions(int potion, int cibleIndex, BindingList<Villageois> Village)
         {
             if (potion==1&&_potionTuer)
             {

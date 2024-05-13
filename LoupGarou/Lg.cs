@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,7 @@ namespace LoupGarou
         /// <summary>
         /// Cette fonction serais appeler à chaque tour de nuit et vu qu'on se base sur un jeux en singleplayer alors ça sera le joueur qui va prendre la decision de qui manger ou ne pas manger
         /// </summary>
-        public void Manger(List<Villageois> ListLoup, List<Villageois> VillageVivant, int cible)
+        public void Manger(List<Villageois> ListLoup, BindingList<Villageois> VillageVivant, int cible)
         {
             // Vérifier si l'index cible est valide
             if (cible >= 0 && cible < VillageVivant.Count)

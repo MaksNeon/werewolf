@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,7 @@ namespace LoupGarou
         /// <param name="index1"></param>
         /// <param name="index2"></param>
         /// <returns></returns>
-        public List<Villageois> DesignerAmoureux(List<Villageois> VillageVivant, int index1, int index2)
+        public List<Villageois> DesignerAmoureux(BindingList<Villageois> VillageVivant, int index1, int index2)
         {
             Villageois Amoureux1 = VillageVivant[index1];
             Villageois Amoureux2 = VillageVivant[index2];

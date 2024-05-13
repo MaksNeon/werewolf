@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -10,7 +11,7 @@ namespace LoupGarou
 {
     public class MaitreDuJeux
     {
-        public List<Villageois> Village = new List<Villageois>();
+        public BindingList<Villageois> Village = new BindingList<Villageois>();
         private List<Villageois> ListLoup = new List<Villageois>();
         private List<Villageois> NonListLoup = new List<Villageois>();
         private List<Villageois> ListCupidon = new List<Villageois>();
@@ -30,7 +31,7 @@ namespace LoupGarou
             JouerTour();
         }
 
-        public List<Villageois> GetVillage
+        public BindingList<Villageois> GetVillage
         {
             get { return Village; }
         }

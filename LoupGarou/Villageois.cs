@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,7 +57,7 @@ namespace LoupGarou
         /// </summary>
         /// <param name="villageois">C'est une liste qui permets d'avoir la liste des joueur encore en vie c'est une liste de l'objet Villageois</param>
         /// <returns>villageoissorti</returns>
-        public Villageois Voter(List<Villageois> villageois)
+        public Villageois Voter(BindingList<Villageois> villageois)
         {
             if (EstVivant && villageois.Count > 0)
             {
