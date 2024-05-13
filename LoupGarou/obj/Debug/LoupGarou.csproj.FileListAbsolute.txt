@@ -1,0 +1,10 @@
+D:\LoupGarou\LoupGarou\bin\Debug\LoupGarou.exe.config
+D:\LoupGarou\LoupGarou\bin\Debug\LoupGarou.exe
+D:\LoupGarou\LoupGarou\bin\Debug\LoupGarou.pdb
+D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.csproj.AssemblyReference.cache
+D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.Properties.Resources.resources
+D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.csproj.GenerateResource.cache
+D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.csproj.CoreCompileInputs.cache
+D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.exe
+D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.pdb
+D:\LoupGarou\LoupGarou\obj\Debug\LoupGarou.LoupGarou.resources
