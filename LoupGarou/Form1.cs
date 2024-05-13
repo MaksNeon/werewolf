@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace LoupGarou
 {
@@ -79,12 +80,40 @@ namespace LoupGarou
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            maitreDuJeux.StartGame();
+            maitreDuJeux.CréeVillage(maitreDuJeux.username);
+            if (maitreDuJeux.Village.Count>14)
+            {
+
+            }
+            else
+            {
+                timerRefreshList.Stop();
+                maitreDuJeux.StartGame();
+            }
+            
         }
 
         private void listViewVillage_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void timerRefreshList_Tick_1(object sender, EventArgs e)
+        {
+            if (maitreDuJeux.username.Count<15)
+            {
+                btnStart.Enabled = false;
+            }
+            else
+            {
+                btnStart.Enabled = true;
+            }
+            listViewVillage.Items.Clear();
+
+            foreach (Villageois nom in maitreDuJeux.Village)
+            {
+                listViewVillage.Items.Add(nom.nom);
+            }
         }
     }
 }

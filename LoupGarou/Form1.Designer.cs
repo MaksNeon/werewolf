@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.btnAjouterJoueur = new System.Windows.Forms.Button();
             this.timerRefreshList = new System.Windows.Forms.Timer(this.components);
             this.listViewVillage = new System.Windows.Forms.ListView();
             this.lblYourRole = new System.Windows.Forms.Label();
             this.lblRoleSelect = new System.Windows.Forms.Label();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.txboxNomAdd = new System.Windows.Forms.TextBox();
-            this.lblNomAdd = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.lblNomAdd = new System.Windows.Forms.Label();
+            this.txboxNomAdd = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.panelAdd.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +56,8 @@
             // timerRefreshList
             // 
             this.timerRefreshList.Enabled = true;
-            this.timerRefreshList.Interval = 500;
+            this.timerRefreshList.Interval = 150;
+            this.timerRefreshList.Tick += new System.EventHandler(this.timerRefreshList_Tick_1);
             // 
             // listViewVillage
             // 
@@ -65,7 +66,7 @@
             this.listViewVillage.HotTracking = true;
             this.listViewVillage.HoverSelection = true;
             this.listViewVillage.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem4});
             this.listViewVillage.Location = new System.Drawing.Point(586, 12);
             this.listViewVillage.Name = "listViewVillage";
             this.listViewVillage.Size = new System.Drawing.Size(202, 426);
@@ -104,22 +105,6 @@
             this.panelAdd.Size = new System.Drawing.Size(568, 125);
             this.panelAdd.TabIndex = 4;
             // 
-            // txboxNomAdd
-            // 
-            this.txboxNomAdd.Location = new System.Drawing.Point(44, 10);
-            this.txboxNomAdd.Name = "txboxNomAdd";
-            this.txboxNomAdd.Size = new System.Drawing.Size(100, 20);
-            this.txboxNomAdd.TabIndex = 0;
-            // 
-            // lblNomAdd
-            // 
-            this.lblNomAdd.AutoSize = true;
-            this.lblNomAdd.Location = new System.Drawing.Point(3, 13);
-            this.lblNomAdd.Name = "lblNomAdd";
-            this.lblNomAdd.Size = new System.Drawing.Size(32, 13);
-            this.lblNomAdd.TabIndex = 1;
-            this.lblNomAdd.Text = "Nom:";
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(490, 99);
@@ -130,8 +115,25 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // lblNomAdd
+            // 
+            this.lblNomAdd.AutoSize = true;
+            this.lblNomAdd.Location = new System.Drawing.Point(3, 13);
+            this.lblNomAdd.Name = "lblNomAdd";
+            this.lblNomAdd.Size = new System.Drawing.Size(32, 13);
+            this.lblNomAdd.TabIndex = 1;
+            this.lblNomAdd.Text = "Nom:";
+            // 
+            // txboxNomAdd
+            // 
+            this.txboxNomAdd.Location = new System.Drawing.Point(44, 10);
+            this.txboxNomAdd.Name = "txboxNomAdd";
+            this.txboxNomAdd.Size = new System.Drawing.Size(100, 20);
+            this.txboxNomAdd.TabIndex = 0;
+            // 
             // btnStart
             // 
+            this.btnStart.Enabled = false;
             this.btnStart.Location = new System.Drawing.Point(424, 115);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(156, 36);

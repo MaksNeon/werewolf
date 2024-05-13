@@ -10,7 +10,7 @@ namespace LoupGarou
 {
     public class MaitreDuJeux
     {
-        private List<Villageois> Village = new List<Villageois>();
+        public List<Villageois> Village = new List<Villageois>();
         private List<Villageois> ListLoup = new List<Villageois>();
         private List<Villageois> NonListLoup = new List<Villageois>();
         private List<Villageois> ListCupidon = new List<Villageois>();
@@ -174,7 +174,6 @@ namespace LoupGarou
 
         void TourInit()
         {
-            CréeVillage(username);
             EndormirAll();
             TourCupidon();
         }
@@ -223,11 +222,12 @@ namespace LoupGarou
 
         public void CréeVillage(List<string> Username)
         {
+            Village.Clear();
             for (int i = 0; i < 14; i++)
             {
                 if (i <= 3)
                 {
-                    Villageois villageoisLG = new Lg(Username[i]);
+                    Villageois villageoisLG = new Lg(Username[i++]);
                     Village.Add(villageoisLG);
                     ListLoup.Add(villageoisLG);
                 }
