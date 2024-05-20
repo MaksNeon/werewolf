@@ -32,3 +32,5 @@ C:\Users\ptysi\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.exe
 C:\Users\ptysi\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.pdb
 C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\bin\Debug\Guna.UI2.dll
 C:\Users\fauza\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.csproj.Up2Date
+C:\Users\ptysi\Documents\GitHub\werewolf\LoupGarou\bin\Debug\Guna.UI2.dll
+C:\Users\ptysi\Documents\GitHub\werewolf\LoupGarou\obj\Debug\LoupGarou.csproj.Up2Date

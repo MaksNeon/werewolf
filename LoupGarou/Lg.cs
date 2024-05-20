@@ -12,7 +12,7 @@ namespace LoupGarou
      /// </summary>
     public class Lg : Villageois
     {
-        // pas de getter ou setter car elle peuvent jsute voir les autre loup avec une fonction ou tuer avec une fonction
+        // pas de getter ou setter car elle peuvent juste voir les autre loup avec une fonction ou tuer avec une fonction
         public Lg(string nom) : base(nom)
         {
 

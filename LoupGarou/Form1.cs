@@ -29,7 +29,6 @@ namespace LoupGarou
         public List<Villageois> village = new List<Villageois>();
         public MaitreDuJeux maitreDuJeux = new MaitreDuJeux();
 
-        //private List<Villageois> _village;
         public LoupGarou()
         {
             InitializeComponent();

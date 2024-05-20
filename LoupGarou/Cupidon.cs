@@ -35,19 +35,5 @@ namespace LoupGarou
             Amoureux.Add(Amoureux2);
             return Amoureux;
         }
-
-
-        //public void VoterAmoureux(List<Villageois> villageois)
-        //{
-        //    if (EstVivant && villageois.Count > 0)
-        //    {
-        //        Random rdm = new Random();
-        //        int indexRdm1 = rdm.Next(villageois.Count);
-        //        int indexRdm2 = rdm.Next(villageois.Count);
-        //        Villageois villageois1 = villageois[indexRdm1];
-        //        Villageois villageois2 = villageois[indexRdm2];
-        //        Amoureux amoureux = villageois1;
-        //    }
-        //}
     }
 }

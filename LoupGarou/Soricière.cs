@@ -50,13 +50,18 @@ namespace LoupGarou
             }
         }
 
-
+        /// <summary>
+        /// Utilise la potion de mort
+        /// </summary>
         public bool PotionTuer
         {
             set { _potionTuer = value; }
             get { return _potionTuer; }
         }
 
+        /// <summary>
+        /// Utilise la potion de soin
+        /// </summary>
         public bool PotionSoin
         {
             set { _potionSoin = value; }
