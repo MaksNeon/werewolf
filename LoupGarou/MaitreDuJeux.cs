@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -18,6 +19,7 @@ namespace LoupGarou
         private List<Villageois> VillageMort = new List<Villageois>();
         private List<Villageois> ListSorcière = new List<Villageois>();
         public List<string> username = new List<string>();
+        private bool loupgauchkboxTour = false;
 
         public Random random = new Random();
         public bool GameEnd = false;
@@ -36,11 +38,17 @@ namespace LoupGarou
             get { return Village; }
         }
 
+        public bool LoupgauchkboxTour
+        {
+            set => loupgauchkboxTour = value;
+        }
+
+
         void ListAllVillageois()
         {
             foreach (Villageois villageois in Village)
             {
-                Console.WriteLine(villageois.ToString());
+                //Console.WriteLine(villageois.ToString());
             }
         }
 
@@ -58,6 +66,7 @@ namespace LoupGarou
             int nbTour = 0;
             while (!GameEnd)
             {
+                loupgauchkboxTour = false;
                 if (Village.Count < 4)
                 {
                     if (NonListLoup.Count > ListLoup.Count)
@@ -79,12 +88,15 @@ namespace LoupGarou
                 }
                 else
                 {
-                    Thread.Sleep(1000);
+                    while (!loupgauchkboxTour)
+                    {
+                        Application.DoEvents();
+                    }
                     nbTour++;
                     Console.WriteLine($"Jour {nbTour}");
                     TourNormal();
                     DeleteVillageoisMort();
-                    ListAllVillageois();
+                    //ListAllVillageois();
                 }
             }
         }
@@ -131,7 +143,7 @@ namespace LoupGarou
             {
                 if (villageoisSelectionner is null)
                 {
-                    Console.WriteLine("");
+                    //Console.WriteLine("");
                 }
                 else
                 {
@@ -156,6 +168,11 @@ namespace LoupGarou
 
         }
 
+
+        /// <summary>
+        /// Cette fonction fait une declaration au village
+        /// </summary>
+        /// <param name="Annonce"></param>
         void AnonnceVillage(string Annonce)
         {
             Console.WriteLine(Annonce);
@@ -224,7 +241,7 @@ namespace LoupGarou
             Village.Clear();
             for (int i = 0; i < 14; i++)
             {
-                if (i <= 3)
+                if (i <= 4)
                 {
                     Villageois villageoisLG = new Lg(Username[i++]);
                     Village.Add(villageoisLG);
@@ -253,7 +270,7 @@ namespace LoupGarou
             }
             foreach (Villageois villageois in Village)
             {
-                Console.WriteLine(villageois.nom);
+                //Console.WriteLine(villageois.nom);
             }
         }
     }

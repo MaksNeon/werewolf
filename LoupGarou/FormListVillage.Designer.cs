@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.lsbVillage = new System.Windows.Forms.ListBox();
             this.timerUpdateList = new System.Windows.Forms.Timer(this.components);
+            this.villageoisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.villageoisBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lsbVillage
@@ -60,6 +62,7 @@
             this.Text = "FormListVillage";
             this.Load += new System.EventHandler(this.FormListVillage_Load);
             this.Enter += new System.EventHandler(this.FormListVillage_Enter);
+            ((System.ComponentModel.ISupportInitialize)(this.villageoisBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -68,5 +71,6 @@
 
         private System.Windows.Forms.ListBox lsbVillage;
         private System.Windows.Forms.Timer timerUpdateList;
+        private System.Windows.Forms.BindingSource villageoisBindingSource;
     }
 }

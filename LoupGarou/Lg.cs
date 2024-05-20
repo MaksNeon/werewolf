@@ -21,7 +21,6 @@ namespace LoupGarou
         public string GetSimpleType()
         {
             string type = this.GetType().ToString().Replace("LoupGarou.", "");
-            Console.WriteLine(type);
             return type;
         }
 

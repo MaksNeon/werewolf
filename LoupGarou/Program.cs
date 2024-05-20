@@ -16,14 +16,6 @@ namespace LoupGarou
         [STAThread]
         static void Main()
         {
-            //Villageois mateo = new Villageois("Mateo");
-            //Villageois Ismael = new Villageois("Ismael");
-            //Lg dario = new Lg("Dario");
-
-            //village.Add(mateo);
-            //village.Add(dario);
-            //village.Add(Ismael);
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoupGarou());

@@ -17,7 +17,7 @@ namespace LoupGarou
             InitializeComponent();
             timerUpdateList.Start();
             lsbVillage.DataSource = village;
-            //lsbVillage.DisplayMember = "Name"; // Assuming Villageois has a Name property
+            lsbVillage.DisplayMember = "nom"; // Assuming Villageois has a Name property
         }
 
         private void FormListVillage_Load(object sender, EventArgs e)

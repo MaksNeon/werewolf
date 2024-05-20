@@ -14,6 +14,18 @@ namespace LoupGarou
 {
     public partial class LoupGarou : Form
     {
+     /// <summary>
+     /// Pour enlever les flash blanc des winform basic quand meme on fait pas le travail a moitier
+     /// </summary>
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParam = base.CreateParams;
+                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
+                return handleParam;
+            }
+        }
         public List<Villageois> village = new List<Villageois>();
         public MaitreDuJeux maitreDuJeux = new MaitreDuJeux();
 
@@ -21,6 +33,8 @@ namespace LoupGarou
         public LoupGarou()
         {
             InitializeComponent();
+            // Pour enlever les flash blanc des winform basic quand meme on fait pas le travail a moitier
+            this.SetStyle(System.Windows.Forms.ControlStyles.UserPaint | System.Windows.Forms.ControlStyles.AllPaintingInWmPaint | System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer, true);
             //this._village = village;
             Thread.Sleep(200);
             lblYourRole.Text = "Vous: Maitre du jeux";
@@ -28,6 +42,7 @@ namespace LoupGarou
             panelAdd.Hide();
 
         }
+
 
         public List<Villageois> Village
         {
@@ -37,20 +52,6 @@ namespace LoupGarou
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //foreach (Villageois n in _village)
-            //{
-            //Console.WriteLine(n.nom);
-            //    MessageBox.Show(n.nom);
-            //}
-        }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnAjouterJoueur_Click(object sender, EventArgs e)
         {
@@ -107,8 +108,6 @@ namespace LoupGarou
         private void listViewUsername_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-
-        //ICI negro
         private void btnListVillageois_Click(object sender, EventArgs e)
         {
             FormListVillage formListVillage = new FormListVillage(maitreDuJeux.Village);
@@ -131,5 +130,31 @@ namespace LoupGarou
                 MessageBox.Show("Veuillez saisir le nom du joueur.");
             }
         }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2CustomCheckBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// Gestionnaire de l'événement clic pour le label
+        /// </summary>
+        /// <param name="sender">L'objet source de l'événement.</param>
+        /// <param name="e">Les données de l'événement.</param>
+        private async void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+            // Active le tour du Loupgauchkbox
+            maitreDuJeux.LoupgauchkboxTour = true;
+        }
+
     }
 }

@@ -29,32 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoupGarou));
             this.btnAjouterJoueur = new System.Windows.Forms.Button();
             this.timerRefreshList = new System.Windows.Forms.Timer(this.components);
             this.lblYourRole = new System.Windows.Forms.Label();
             this.panelAdd = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblNomAdd = new System.Windows.Forms.Label();
             this.txboxNomAdd = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.listViewUsername = new System.Windows.Forms.ListView();
             this.btnListVillageois = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panelBar = new System.Windows.Forms.Panel();
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.btnClose = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnTour = new Guna.UI2.WinForms.Guna2Button();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.panelAdd.SuspendLayout();
+            this.panelBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAjouterJoueur
             // 
             this.btnAjouterJoueur.BackColor = System.Drawing.Color.Transparent;
-            this.btnAjouterJoueur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAjouterJoueur.Font = new System.Drawing.Font("Correction Tape", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouterJoueur.Location = new System.Drawing.Point(12, 88);
+            resources.ApplyResources(this.btnAjouterJoueur, "btnAjouterJoueur");
             this.btnAjouterJoueur.Name = "btnAjouterJoueur";
-            this.btnAjouterJoueur.Size = new System.Drawing.Size(180, 48);
-            this.btnAjouterJoueur.TabIndex = 0;
-            this.btnAjouterJoueur.Text = "ajouter un joueur";
             this.btnAjouterJoueur.UseVisualStyleBackColor = false;
             this.btnAjouterJoueur.Click += new System.EventHandler(this.btnAjouterJoueur_Click);
             // 
@@ -66,15 +69,10 @@
             // 
             // lblYourRole
             // 
-            this.lblYourRole.AutoSize = true;
+            resources.ApplyResources(this.lblYourRole, "lblYourRole");
             this.lblYourRole.BackColor = System.Drawing.Color.Transparent;
-            this.lblYourRole.Font = new System.Drawing.Font("Correction Tape", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYourRole.ForeColor = System.Drawing.Color.Gold;
-            this.lblYourRole.Location = new System.Drawing.Point(9, 9);
             this.lblYourRole.Name = "lblYourRole";
-            this.lblYourRole.Size = new System.Drawing.Size(127, 31);
-            this.lblYourRole.TabIndex = 2;
-            this.lblYourRole.Text = "Vous: ...";
             // 
             // panelAdd
             // 
@@ -83,117 +81,163 @@
             this.panelAdd.Controls.Add(this.btnAdd);
             this.panelAdd.Controls.Add(this.lblNomAdd);
             this.panelAdd.Controls.Add(this.txboxNomAdd);
-            this.panelAdd.Location = new System.Drawing.Point(12, 157);
+            resources.ApplyResources(this.panelAdd, "panelAdd");
             this.panelAdd.Name = "panelAdd";
-            this.panelAdd.Size = new System.Drawing.Size(238, 125);
-            this.panelAdd.TabIndex = 4;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Correction Tape", 11F);
-            this.btnAdd.Location = new System.Drawing.Point(130, 80);
+            resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(105, 42);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Ajouter";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblNomAdd
             // 
-            this.lblNomAdd.AutoSize = true;
-            this.lblNomAdd.Font = new System.Drawing.Font("Correction Tape", 15F);
-            this.lblNomAdd.Location = new System.Drawing.Point(3, 13);
+            resources.ApplyResources(this.lblNomAdd, "lblNomAdd");
             this.lblNomAdd.Name = "lblNomAdd";
-            this.lblNomAdd.Size = new System.Drawing.Size(57, 23);
-            this.lblNomAdd.TabIndex = 1;
-            this.lblNomAdd.Text = "Nom:";
             // 
             // txboxNomAdd
             // 
-            this.txboxNomAdd.Font = new System.Drawing.Font("Correction Tape", 12F);
-            this.txboxNomAdd.Location = new System.Drawing.Point(66, 13);
+            resources.ApplyResources(this.txboxNomAdd, "txboxNomAdd");
             this.txboxNomAdd.Name = "txboxNomAdd";
-            this.txboxNomAdd.Size = new System.Drawing.Size(150, 26);
-            this.txboxNomAdd.TabIndex = 0;
             // 
             // btnStart
             // 
-            this.btnStart.Enabled = false;
-            this.btnStart.Font = new System.Drawing.Font("Correction Tape", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(12, 288);
+            resources.ApplyResources(this.btnStart, "btnStart");
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(238, 36);
-            this.btnStart.TabIndex = 5;
-            this.btnStart.Text = "Commencez";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // listViewUsername
             // 
             this.listViewUsername.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listViewUsername.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            resources.ApplyResources(this.listViewUsername, "listViewUsername");
             this.listViewUsername.BackColor = System.Drawing.Color.Silver;
             this.listViewUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listViewUsername.Font = new System.Drawing.Font("Correction Tape", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewUsername.ForeColor = System.Drawing.Color.Transparent;
             this.listViewUsername.HideSelection = false;
             this.listViewUsername.HotTracking = true;
             this.listViewUsername.HoverSelection = true;
             this.listViewUsername.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listViewUsername.Location = new System.Drawing.Point(448, 9);
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewUsername.Items")))});
             this.listViewUsername.Name = "listViewUsername";
-            this.listViewUsername.Size = new System.Drawing.Size(349, 312);
             this.listViewUsername.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.listViewUsername.TabIndex = 6;
             this.listViewUsername.TileSize = new System.Drawing.Size(5, 5);
             this.listViewUsername.UseCompatibleStateImageBehavior = false;
             this.listViewUsername.SelectedIndexChanged += new System.EventHandler(this.listViewUsername_SelectedIndexChanged);
             // 
             // btnListVillageois
             // 
-            this.btnListVillageois.Font = new System.Drawing.Font("Correction Tape", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListVillageois.Location = new System.Drawing.Point(517, 327);
+            resources.ApplyResources(this.btnListVillageois, "btnListVillageois");
             this.btnListVillageois.Name = "btnListVillageois";
-            this.btnListVillageois.Size = new System.Drawing.Size(190, 23);
-            this.btnListVillageois.TabIndex = 8;
-            this.btnListVillageois.Text = "Liste des villageois";
             this.btnListVillageois.UseVisualStyleBackColor = true;
             this.btnListVillageois.Click += new System.EventHandler(this.btnListVillageois_Click);
             // 
-            // button1
+            // panelBar
             // 
-            this.button1.Font = new System.Drawing.Font("Correction Tape", 10F);
-            this.button1.Location = new System.Drawing.Point(3, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 42);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Ajouter X14";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.panelBar.Controls.Add(this.lblTitle);
+            this.panelBar.Controls.Add(this.guna2CircleButton1);
+            this.panelBar.Controls.Add(this.btnClose);
+            resources.ApplyResources(this.panelBar, "panelBar");
+            this.panelBar.Name = "panelBar";
+            // 
+            // BorderlessForm
+            // 
+            this.BorderlessForm.AnimateWindow = true;
+            this.BorderlessForm.BorderRadius = 10;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.ShadowColor = System.Drawing.Color.DarkSlateGray;
+            this.BorderlessForm.TransparentWhileDrag = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.FillColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.DarkRed;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.PressedDepth = 50;
+            this.btnClose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.DarkOrange;
+            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.DarkGoldenrod;
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.PressedDepth = 50;
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.TextFormatNoPrefix = true;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
+            // DragControl
+            // 
+            this.DragControl.DockForm = true;
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.panelBar;
+            this.DragControl.UseTransparentDrag = true;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+            // 
+            // btnTour
+            // 
+            this.btnTour.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTour.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnTour, "btnTour");
+            this.btnTour.ForeColor = System.Drawing.Color.White;
+            this.btnTour.Name = "btnTour";
+            this.btnTour.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+            // 
+            // lblTitle
+            // 
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.Name = "lblTitle";
             // 
             // LoupGarou
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(808, 361);
+            this.Controls.Add(this.btnTour);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelBar);
             this.Controls.Add(this.btnListVillageois);
             this.Controls.Add(this.listViewUsername);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panelAdd);
             this.Controls.Add(this.lblYourRole);
             this.Controls.Add(this.btnAjouterJoueur);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(824, 400);
-            this.MinimumSize = new System.Drawing.Size(824, 400);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoupGarou";
             this.ShowIcon = false;
-            this.Text = "Loups-garoups";
             this.panelAdd.ResumeLayout(false);
             this.panelAdd.PerformLayout();
+            this.panelBar.ResumeLayout(false);
+            this.panelBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,6 +256,14 @@
         private System.Windows.Forms.ListView listViewUsername;
         private System.Windows.Forms.Button btnListVillageois;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelBar;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
+        private Guna.UI2.WinForms.Guna2CircleButton btnClose;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnTour;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
 
