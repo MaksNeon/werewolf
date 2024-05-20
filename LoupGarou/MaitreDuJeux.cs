@@ -57,18 +57,18 @@ namespace LoupGarou
             TourInit();
             int nbTour = 0;
             while (!GameEnd)
-            //{
-            //for (int i = 0; i < 10; i++)
             {
                 if (Village.Count < 4)
                 {
                     if (NonListLoup.Count > ListLoup.Count)
                     {
-                        Console.WriteLine("Les Villageois ont gagner");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("\r\n __     ___ _ _                                                         \r\n \\ \\   / (_) | | __ _  __ _  ___    __ _    __ _  __ _  __ _ _ __   ___ \r\n  \\ \\ / /| | | |/ _` |/ _` |/ _ \\  / _` |  / _` |/ _` |/ _` | '_ \\ / _ \\\r\n   \\ V / | | | | (_| | (_| |  __/ | (_| | | (_| | (_| | (_| | | | |  __/\r\n    \\_/  |_|_|_|\\__,_|\\__, |\\___|  \\__,_|  \\__, |\\__,_|\\__, |_| |_|\\___|\r\n                      |___/                |___/       |___/            \r\n");
                     }
                     else if (NonListLoup.Count < ListLoup.Count)
                     {
-                        Console.WriteLine("Les Loups ont gagner");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\r\n▄▄▌  ▄▄▄ ..▄▄ ·     ▄▄▌        ▄• ▄▌ ▄▄▄·.▄▄ ·      ▄▄ •  ▄▄▄·  ▄▄ •  ▐ ▄ ▄▄▄ . ▐ ▄ ▄▄▄▄▄\r\n██•  ▀▄.▀·▐█ ▀.     ██•  ▪     █▪██▌▐█ ▄█▐█ ▀.     ▐█ ▀ ▪▐█ ▀█ ▐█ ▀ ▪•█▌▐█▀▄.▀·•█▌▐█•██  \r\n██▪  ▐▀▀▪▄▄▀▀▀█▄    ██▪   ▄█▀▄ █▌▐█▌ ██▀·▄▀▀▀█▄    ▄█ ▀█▄▄█▀▀█ ▄█ ▀█▄▐█▐▐▌▐▀▀▪▄▐█▐▐▌ ▐█.▪\r\n▐█▌▐▌▐█▄▄▌▐█▄▪▐█    ▐█▌▐▌▐█▌.▐▌▐█▄█▌▐█▪·•▐█▄▪▐█    ▐█▄▪▐█▐█ ▪▐▌▐█▄▪▐███▐█▌▐█▄▄▌██▐█▌ ▐█▌·\r\n.▀▀▀  ▀▀▀  ▀▀▀▀     .▀▀▀  ▀█▄▀▪ ▀▀▀ .▀    ▀▀▀▀     ·▀▀▀▀  ▀  ▀ ·▀▀▀▀ ▀▀ █▪ ▀▀▀ ▀▀ █▪ ▀▀▀ \r\n");
                     }
                     GameEnd = true;
                 }
@@ -79,16 +79,14 @@ namespace LoupGarou
                 }
                 else
                 {
+                    Thread.Sleep(1000);
                     nbTour++;
-                    Console.WriteLine($"Tour {nbTour}");
+                    Console.WriteLine($"Jour {nbTour}");
                     TourNormal();
                     DeleteVillageoisMort();
                     ListAllVillageois();
                 }
             }
-
-            //}
-
         }
 
         void TourSorciere(int cible)

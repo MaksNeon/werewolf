@@ -114,5 +114,22 @@ namespace LoupGarou
             FormListVillage formListVillage = new FormListVillage(maitreDuJeux.Village);
             formListVillage.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txboxNomAdd.Text))
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    maitreDuJeux.username.Add(txboxNomAdd.Text);
+                    listViewUsername.Items.Add(txboxNomAdd.Text);
+                }
+                panelAdd.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Veuillez saisir le nom du joueur.");
+            }
+        }
     }
 }
