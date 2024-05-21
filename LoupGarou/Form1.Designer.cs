@@ -39,16 +39,15 @@
             this.lblNomAdd = new System.Windows.Forms.Label();
             this.txboxNomAdd = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
-            this.listViewUsername = new System.Windows.Forms.ListView();
             this.btnListVillageois = new System.Windows.Forms.Button();
             this.panelBar = new System.Windows.Forms.Panel();
-            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.btnClose = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnClose = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.btnTour = new Guna.UI2.WinForms.Guna2Button();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.panelAdd.SuspendLayout();
             this.panelBar.SuspendLayout();
             this.SuspendLayout();
@@ -115,24 +114,6 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // listViewUsername
-            // 
-            this.listViewUsername.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            resources.ApplyResources(this.listViewUsername, "listViewUsername");
-            this.listViewUsername.BackColor = System.Drawing.Color.Silver;
-            this.listViewUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listViewUsername.ForeColor = System.Drawing.Color.Transparent;
-            this.listViewUsername.HideSelection = false;
-            this.listViewUsername.HotTracking = true;
-            this.listViewUsername.HoverSelection = true;
-            this.listViewUsername.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewUsername.Items")))});
-            this.listViewUsername.Name = "listViewUsername";
-            this.listViewUsername.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.listViewUsername.TileSize = new System.Drawing.Size(5, 5);
-            this.listViewUsername.UseCompatibleStateImageBehavior = false;
-            this.listViewUsername.SelectedIndexChanged += new System.EventHandler(this.listViewUsername_SelectedIndexChanged);
-            // 
             // btnListVillageois
             // 
             resources.ApplyResources(this.btnListVillageois, "btnListVillageois");
@@ -148,14 +129,26 @@
             resources.ApplyResources(this.panelBar, "panelBar");
             this.panelBar.Name = "panelBar";
             // 
-            // BorderlessForm
+            // lblTitle
             // 
-            this.BorderlessForm.AnimateWindow = true;
-            this.BorderlessForm.BorderRadius = 10;
-            this.BorderlessForm.ContainerControl = this;
-            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
-            this.BorderlessForm.ShadowColor = System.Drawing.Color.DarkSlateGray;
-            this.BorderlessForm.TransparentWhileDrag = true;
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.Name = "lblTitle";
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.DarkOrange;
+            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.DarkGoldenrod;
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.PressedDepth = 50;
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.TextFormatNoPrefix = true;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // btnClose
             // 
@@ -173,21 +166,14 @@
             this.btnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // guna2CircleButton1
+            // BorderlessForm
             // 
-            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.DarkOrange;
-            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.DarkGoldenrod;
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.PressedDepth = 50;
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.TextFormatNoPrefix = true;
-            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            this.BorderlessForm.AnimateWindow = true;
+            this.BorderlessForm.BorderRadius = 10;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.ShadowColor = System.Drawing.Color.DarkSlateGray;
+            this.BorderlessForm.TransparentWhileDrag = true;
             // 
             // DragControl
             // 
@@ -213,11 +199,6 @@
             this.btnTour.Name = "btnTour";
             this.btnTour.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
-            // lblTitle
-            // 
-            resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.Name = "lblTitle";
-            // 
             // LoupGarou
             // 
             resources.ApplyResources(this, "$this");
@@ -226,7 +207,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelBar);
             this.Controls.Add(this.btnListVillageois);
-            this.Controls.Add(this.listViewUsername);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panelAdd);
             this.Controls.Add(this.lblYourRole);
@@ -253,7 +233,6 @@
         private System.Windows.Forms.Label lblNomAdd;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.ListView listViewUsername;
         private System.Windows.Forms.Button btnListVillageois;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelBar;

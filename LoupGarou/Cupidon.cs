@@ -6,10 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LoupGarou
-{    /// <summary>
-     /// Classe pour Cupidon
-     /// Calvo Oscar
-     /// </summary>
+{
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   Cupidon.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     public class Cupidon : Villageois
     {
         public List<Villageois> Amoureux = new List<Villageois>();

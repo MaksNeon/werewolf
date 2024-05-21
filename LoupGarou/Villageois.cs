@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace LoupGarou
 {
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   Villageois.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     public class Villageois
     {
         private string _nom;

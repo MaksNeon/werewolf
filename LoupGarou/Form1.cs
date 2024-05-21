@@ -12,11 +12,17 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace LoupGarou
 {
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   Form1.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     public partial class LoupGarou : Form
     {
-     /// <summary>
-     /// Pour enlever les flash blanc des winform basic quand meme on fait pas le travail a moitier
-     /// </summary>
+        /// <summary>
+        /// Pour enlever les flash blanc des winform basic quand meme on fait pas le travail a moitier
+        /// </summary>
         protected override CreateParams CreateParams
         {
             get
@@ -34,7 +40,6 @@ namespace LoupGarou
             InitializeComponent();
             // Pour enlever les flash blanc des winform basic quand meme on fait pas le travail a moitier
             this.SetStyle(System.Windows.Forms.ControlStyles.UserPaint | System.Windows.Forms.ControlStyles.AllPaintingInWmPaint | System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer, true);
-            //this._village = village;
             Thread.Sleep(200);
             lblYourRole.Text = "Vous: Maitre du jeux";
             timerRefreshList.Start();
@@ -62,7 +67,6 @@ namespace LoupGarou
             if (!String.IsNullOrEmpty(txboxNomAdd.Text))
             {
                 maitreDuJeux.username.Add(txboxNomAdd.Text);
-                listViewUsername.Items.Add(txboxNomAdd.Text);
                 panelAdd.Hide();
             }
             else
@@ -120,7 +124,6 @@ namespace LoupGarou
                 for (int i = 0; i < 15; i++)
                 {
                     maitreDuJeux.username.Add(txboxNomAdd.Text);
-                    listViewUsername.Items.Add(txboxNomAdd.Text);
                 }
                 panelAdd.Hide();
             }
@@ -154,6 +157,5 @@ namespace LoupGarou
             // Active le tour du Loupgauchkbox
             maitreDuJeux.LoupgauchkboxTour = true;
         }
-
     }
 }

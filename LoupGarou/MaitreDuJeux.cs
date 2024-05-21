@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace LoupGarou
 {
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   MaitreDuJeux.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     public class MaitreDuJeux
     {
         public BindingList<Villageois> Village = new BindingList<Villageois>();
@@ -20,9 +26,9 @@ namespace LoupGarou
         private List<Villageois> ListSorcière = new List<Villageois>();
         public List<string> username = new List<string>();
         private bool loupgauchkboxTour = false;
-
         public Random random = new Random();
         public bool GameEnd = false;
+
         public MaitreDuJeux()
         {
 
@@ -44,17 +50,6 @@ namespace LoupGarou
         public bool LoupgauchkboxTour
         {
             set => loupgauchkboxTour = value;
-        }
-
-        /// <summary>
-        /// Liste tous les villageois (actuellement commenté).
-        /// </summary>
-        void ListAllVillageois()
-        {
-            foreach (Villageois villageois in Village)
-            {
-                //Console.WriteLine(villageois.ToString());
-            }
         }
 
         /// <summary>
@@ -104,10 +99,34 @@ namespace LoupGarou
                         Application.DoEvents();
                     }
                     nbTour++;
-                    Console.WriteLine($"Jour {nbTour}");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    switch (nbTour)
+                    {
+                        case 1:
+                            Console.WriteLine("\r\n\r\n       __    ______    __    __  .______          __  \r\n      |  |  /  __  \\  |  |  |  | |   _  \\        /_ | \r\n      |  | |  |  |  | |  |  |  | |  |_)  |        | | \r\n.--.  |  | |  |  |  | |  |  |  | |      /         | | \r\n|  `--'  | |  `--'  | |  `--'  | |  |\\  \\----.    | | \r\n \\______/   \\______/   \\______/  | _| `._____|    |_| \r\n                                                      \r\n\r\n");
+                            break;
+                        case 2:
+                            Console.WriteLine("\r\n\r\n       __    ______    __    __  .______          ___   \r\n      |  |  /  __  \\  |  |  |  | |   _  \\        |__ \\  \r\n      |  | |  |  |  | |  |  |  | |  |_)  |          ) | \r\n.--.  |  | |  |  |  | |  |  |  | |      /          / /  \r\n|  `--'  | |  `--'  | |  `--'  | |  |\\  \\----.    / /_  \r\n \\______/   \\______/   \\______/  | _| `._____|   |____| \r\n                                                        \r\n\r\n");
+                            break;
+                        case 3:
+                            Console.WriteLine("\r\n\r\n       __    ______    __    __  .______          ____   \r\n      |  |  /  __  \\  |  |  |  | |   _  \\        |___ \\  \r\n      |  | |  |  |  | |  |  |  | |  |_)  |         __) | \r\n.--.  |  | |  |  |  | |  |  |  | |      /         |__ <  \r\n|  `--'  | |  `--'  | |  `--'  | |  |\\  \\----.    ___) | \r\n \\______/   \\______/   \\______/  | _| `._____|   |____/  \r\n                                                         \r\n\r\n");
+                            break;
+                        case 4:
+                            Console.WriteLine("\r\n\r\n       __    ______    __    __  .______          _  _    \r\n      |  |  /  __  \\  |  |  |  | |   _  \\        | || |   \r\n      |  | |  |  |  | |  |  |  | |  |_)  |       | || |_  \r\n.--.  |  | |  |  |  | |  |  |  | |      /        |__   _| \r\n|  `--'  | |  `--'  | |  `--'  | |  |\\  \\----.      | |   \r\n \\______/   \\______/   \\______/  | _| `._____|      |_|   \r\n                                                          \r\n\r\n");
+                            break;
+                        case 5:
+                            Console.WriteLine("\r\n\r\n       __    ______    __    __  .______          _____  \r\n      |  |  /  __  \\  |  |  |  | |   _  \\        | ____| \r\n      |  | |  |  |  | |  |  |  | |  |_)  |       | |__   \r\n.--.  |  | |  |  |  | |  |  |  | |      /        |___ \\  \r\n|  `--'  | |  `--'  | |  `--'  | |  |\\  \\----.    ___) | \r\n \\______/   \\______/   \\______/  | _| `._____|   |____/  \r\n                                                         \r\n\r\n");
+                            break;
+                        case 6:
+                            Console.WriteLine("\r\n\r\n       __    ______    __    __  .______            __   \r\n      |  |  /  __  \\  |  |  |  | |   _  \\          / /   \r\n      |  | |  |  |  | |  |  |  | |  |_)  |        / /_   \r\n.--.  |  | |  |  |  | |  |  |  | |      /        | '_ \\  \r\n|  `--'  | |  `--'  | |  `--'  | |  |\\  \\----.   | (_) | \r\n \\______/   \\______/   \\______/  | _| `._____|    \\___/  \r\n                                                         \r\n\r\n");
+                            break;
+                        case 7:
+                            Console.WriteLine("\r\n\r\n       __    ______    __    __  .______          ______  \r\n      |  |  /  __  \\  |  |  |  | |   _  \\        |____  | \r\n      |  | |  |  |  | |  |  |  | |  |_)  |           / /  \r\n.--.  |  | |  |  |  | |  |  |  | |      /           / /   \r\n|  `--'  | |  `--'  | |  `--'  | |  |\\  \\----.     / /    \r\n \\______/   \\______/   \\______/  | _| `._____|    /_/     \r\n                                                          \r\n\r\n");
+                            break;
+
+                    }
                     TourNormal();
                     DeleteVillageoisMort();
-                    //ListAllVillageois();
                 }
             }
         }
@@ -120,7 +139,7 @@ namespace LoupGarou
             foreach (Sorciere sorciere in ListSorcière)
             {
                 WakeUp(sorciere);
-                sorciere.UtiliserPotions(random.Next(1, 2), cible, Village);
+                sorciere.UtiliserPotions(random.Next(0, 2), cible, Village);
             }
         }
 
@@ -135,6 +154,10 @@ namespace LoupGarou
                 WakeUp(loup);
                 loup.Manger(ListLoup, Village, cible);
             }
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("   ▄▄▄▄▀ ████▄   ▄   █▄▄▄▄     ██▄   ▄███▄     ▄▄▄▄▄       █    ████▄   ▄   █ ▄▄    ▄▄▄▄▄   \r\n▀▀▀ █    █   █    █  █  ▄▀     █  █  █▀   ▀   █     ▀▄     █    █   █    █  █   █  █     ▀▄ \r\n    █    █   █ █   █ █▀▀▌      █   █ ██▄▄   ▄  ▀▀▀▀▄       █    █   █ █   █ █▀▀▀ ▄  ▀▀▀▀▄   \r\n   █     ▀████ █   █ █  █      █  █  █▄   ▄▀ ▀▄▄▄▄▀        ███▄ ▀████ █   █ █     ▀▄▄▄▄▀    \r\n  ▀            █▄ ▄█   █       ███▀  ▀███▀                     ▀      █▄ ▄█  █              \r\n                ▀▀▀   ▀                                                ▀▀▀    ▀             \r\n                                                                                            \r\n\r\n");
+            Console.WriteLine("                              __\r\n                            .d$$b\r\n                          .' TO$;\\\r\n                         /  : TP._;\r\n                        / _.;  :Tb|\r\n                       /   /   ;j$j\r\n                   _.-\"       d$$$$\r\n                 .' ..       d$$$$;\r\n                /  /P'      d$$$$P. |\\\r\n               /   \"      .d$$$P' |\\^\"l\r\n             .'           `T$P^\"\"\"\"\"  :\r\n         ._.'      _.'                ;\r\n      `-.-\".-'-' ._.       _.-\"    .-\"\r\n    `.-\" _____  ._              .-\"\r\n   -(.g$$$$$$$b.              .'\r\n     \"\"^^T$$$P^)            .(:\r\n       _/  -\"  /.'         /:/;\r\n    ._.'-'`-'  \")/         /;/;\r\n `-.-\"..--\"\"   \" /         /  ;\r\n.-\" ..--\"\"        -'          :\r\n..--\"\"--.-\"         (\\      .-(\\\r\n  ..--\"\"              `-\\(\\/;`\r\n    _.                      :\r\n                            ;`-\r\n                           :\\\r\n                           ;");
+            Console.ForegroundColor = ConsoleColor.White;
             return cible;
         }
 
@@ -152,7 +175,9 @@ namespace LoupGarou
                     {
                         villageois.Death();
                         VillageMort.Add(villageois);
-                        AnonnceVillage($"{villageois.nom} est mort");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"                            ,--.\r\n                           {{    }}\r\n                           K,   }}\r\n                          /  ~Y`\r\n                     ,   /   /\r\n                    {{_'-K.__/\r\n                      `/-.__L._\r\n                      /  ' /`\\_}}\r\n                     /  ' /\r\n             ____   /  ' /\r\n      ,-'~~~~    ~~/  ' /_\r\n    ,'             ``~~~  ',\r\n   (                        Y\r\n  {{                         I\r\n {{      -                    `,\r\n |       ',                   )\r\n |        |   ,..__      __. Y\r\n |    .,_./  Y ' / ^Y   J   )|\r\n \\           |' /   |   |   ||\r\n  \\          L_/    . _ (_,.'(\r\n   \\,   ,      ^^\"\"' / |      )\r\n     \\_  \\          /,L]     /\r\n       '-_~-,       ` `   ./`\r\n          `'{{_            )\r\n              ^^\\..___,.--`\r\n\r\n\r\n{villageois.nom} est mort");
+                        Console.ForegroundColor = ConsoleColor.White;
                     }
                 }
                 List<Villageois> VillageoisVoter = new List<Villageois>();
@@ -193,23 +218,25 @@ namespace LoupGarou
         }
 
         /// <summary>
-        /// Fait une annonce au village.
-        /// </summary>
-        /// <param name="Annonce">Le message à annoncer au village.</param>
-        void AnonnceVillage(string Annonce)
-        {
-            Console.WriteLine(Annonce);
-        }
-
-        /// <summary>
         /// Exécute un tour normal, composé des actions des loups-garous, des sorcières et des actions de la journée.
         /// </summary>
         void TourNormal()
         {
+            Application.DoEvents();
+            Thread.Sleep(1000);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("  _                  _ _ _                        _                _            _   \r\n | |                (_) | |                      ( )              | |          | |  \r\n | |     ___  __   ___| | | __ _  __ _  ___   ___|/  ___ _ __   __| | ___  _ __| |_ \r\n | |    / _ \\ \\ \\ / / | | |/ _` |/ _` |/ _ \\ / __|  / _ \\ '_ \\ / _` |/ _ \\| '__| __|\r\n | |___|  __/  \\ V /| | | | (_| | (_| |  __/ \\__ \\ |  __/ | | | (_| | (_) | |  | |_ \r\n |______\\___|   \\_/ |_|_|_|\\__,_|\\__, |\\___| |___/  \\___|_| |_|\\__,_|\\___/|_|   \\__|\r\n                                  __/ |                                             \r\n                                 |___/                                              \r\n\r\n");
+            Console.ForegroundColor = ConsoleColor.White;
             EndormirAll();
+            Thread.Sleep(1000);
             int cible = TourLoups();
             EndormirAll();
+            Thread.Sleep(1000);
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("   ▄▄▄▄▀ ████▄   ▄   █▄▄▄▄     ██▄   ▄███▄       █    ██          ▄▄▄▄▄   ████▄ █▄▄▄▄ ▄█▄    ▄█ ▄███▄   █▄▄▄▄ ▄███▄   \r\n▀▀▀ █    █   █    █  █  ▄▀     █  █  █▀   ▀      █    █ █        █     ▀▄ █   █ █  ▄▀ █▀ ▀▄  ██ █▀   ▀  █  ▄▀ █▀   ▀  \r\n    █    █   █ █   █ █▀▀▌      █   █ ██▄▄        █    █▄▄█     ▄  ▀▀▀▀▄   █   █ █▀▀▌  █   ▀  ██ ██▄▄    █▀▀▌  ██▄▄    \r\n   █     ▀████ █   █ █  █      █  █  █▄   ▄▀     ███▄ █  █      ▀▄▄▄▄▀    ▀████ █  █  █▄  ▄▀ ▐█ █▄   ▄▀ █  █  █▄   ▄▀ \r\n  ▀            █▄ ▄█   █       ███▀  ▀███▀           ▀   █                        █   ▀███▀   ▐ ▀███▀     █   ▀███▀   \r\n                ▀▀▀   ▀                                 █                        ▀                       ▀            \r\n                                                       ▀                                                              \r\n\r\n");
+            Console.ForegroundColor= ConsoleColor.White;
             TourSorciere(cible);
+            Thread.Sleep(1000);
             EndormirAll();
             TourJour();
         }
@@ -231,14 +258,16 @@ namespace LoupGarou
             foreach (Cupidon cupidon in ListCupidon)
             {
                 cupidon.EstVeillés = true;
-                cupidon.DesignerAmoureux(Village, random.Next(0, 7), random.Next(7, 13));
+                cupidon.DesignerAmoureux(Village, random.Next(4, 5), random.Next(8, 9));
                 cupidon.EstVeillés = false;
                 WakeUp(cupidon.Amoureux[0]);
                 WakeUp(cupidon.Amoureux[1]);
                 Sleep(cupidon.Amoureux[0]);
                 Sleep(cupidon.Amoureux[1]);
-
             }
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("     ***********                  ***********\r\n  *****************            *****************\r\n*********************        *********************\r\n***********************      ***********************\r\n************************    ************************\r\n*************************  *************************\r\n **************************************************\r\n  ************************************************\r\n    ********************************************\r\n      ****************************************\r\n         **********************************\r\n           ******************************\r\n              ************************\r\n                ********************\r\n                   **************\r\n                     **********\r\n                       ******\r\n                         **\r\n             Cupidon designe les amoureux");
+            Console.ForegroundColor = ConsoleColor.White;
 
         }
 
@@ -289,20 +318,20 @@ namespace LoupGarou
             Village.Clear();
             for (int i = 0; i < 14; i++)
             {
-                if (i <= 4)
+                if (i <= 6)
                 {
                     Villageois villageoisLG = new Lg(Username[i++]);
                     Village.Add(villageoisLG);
                     ListLoup.Add(villageoisLG);
                 }
-                else if (i <= 4)
+                else if (i <= 8)
                 {
                     Villageois villageoisSorciere = new Sorciere(Username[i]);
                     Village.Add(villageoisSorciere);
                     NonListLoup.Add(villageoisSorciere);
                     ListSorcière.Add(villageoisSorciere);
                 }
-                else if (i <= 5)
+                else if (i <= 10)
                 {
                     Villageois villageoisCupidon = new Cupidon(Username[i]);
                     Village.Add(villageoisCupidon);

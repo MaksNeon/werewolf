@@ -64,7 +64,7 @@
       <DependentUpon>FormListVillage.cs</DependentUpon>
     </Compile>
     <Compile Include="MaitreDuJeux.cs" />
-    <Compile Include="Soricière.cs" />
+    <Compile Include="Sorciere.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -6,7 +6,12 @@ using System.Windows.Forms;
 
 namespace LoupGarou
 {
-
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   Program.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     internal static class Program
     {
 

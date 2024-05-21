@@ -5,10 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LoupGarou
-{    /// <summary>
-     /// Classe pour les Amoureux
-     /// Calvo Oscar
-     /// </summary>
+{
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   Amoureux.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     public class Amoureux : Villageois
     {
         private Villageois _other;

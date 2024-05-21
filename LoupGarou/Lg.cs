@@ -6,10 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LoupGarou
-{    /// <summary>
-     /// Classe pour les loup garous
-     /// Calvo Oscar
-     /// </summary>
+{
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   Lg.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     public class Lg : Villageois
     {
         // pas de getter ou setter car elle peuvent juste voir les autre loup avec une fonction ou tuer avec une fonction
@@ -25,34 +28,32 @@ namespace LoupGarou
         }
 
         /// <summary>
-        /// Cette fonction serais appeler à chaque tour de nuit et vu qu'on se base sur un jeux en singleplayer alors ça sera le joueur qui va prendre la decision de qui manger ou ne pas manger
+        /// Choix automatique de la cible
         /// </summary>
-        public void Manger(List<Villageois> ListLoup, BindingList<Villageois> VillageVivant, int cible)
+        public void Manger(List<Villageois> listeLoup, BindingList<Villageois> villageVivant, int cible)
         {
             // Vérifier si l'index cible est valide
-            if (cible >= 0 && cible < VillageVivant.Count)
+            if (cible >= 0 && cible < villageVivant.Count)
             {
                 bool manger = false;
                 int tauxmangable = 0;
-                Villageois Vicitme = VillageVivant[cible];
+                Villageois victime = villageVivant[cible];
                 while (!manger)
                 {
-                    foreach (Lg loups in ListLoup)
+                    foreach (Lg loups in listeLoup)
                     {
-                        if (Vicitme.GetType().ToString() != loups.GetSimpleType())
+                        if (victime.GetType().ToString() != loups.GetSimpleType())
                         {
                             tauxmangable++;
                         }
                     }
                     if (tauxmangable > 0)
                     {
-                        Vicitme.Death();
+                        victime.Death();
                         manger = true;
                     }
                 }
             }
-
-
         }
     }
 }

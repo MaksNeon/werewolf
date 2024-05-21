@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace LoupGarou
 {
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   FormListVillage.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     public partial class FormListVillage : Form
     {
         public FormListVillage(BindingList<Villageois> village)
