@@ -1,0 +1,75 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Namespace List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou Namespace Reference}{9}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Amoureux Class Reference}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cupidon Class Reference}{12}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{13}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{13}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Cupidon()}{13}{subsubsection.6.2.2.1}%
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{13}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}DesignerAmoureux()}{13}{subsubsection.6.2.3.1}%
+\contentsline {section}{\numberline {6.3}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Form\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Village Class Reference}{14}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{14}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Member Function Documentation}{14}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Dispose()}{14}{subsubsection.6.3.2.1}%
+\contentsline {section}{\numberline {6.4}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lg Class Reference}{15}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{16}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{16}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}Lg()}{16}{subsubsection.6.4.2.1}%
+\contentsline {subsection}{\numberline {6.4.3}Member Function Documentation}{16}{subsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.3.1}GetSimpleType()}{16}{subsubsection.6.4.3.1}%
+\contentsline {subsubsection}{\numberline {6.4.3.2}Manger()}{16}{subsubsection.6.4.3.2}%
+\contentsline {section}{\numberline {6.5}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou Class Reference}{17}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{17}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou Class Reference}{17}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Member Function Documentation}{17}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}Dispose()}{17}{subsubsection.6.6.1.1}%
+\contentsline {subsection}{\numberline {6.6.2}Property Documentation}{18}{subsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}CreateParams}{18}{subsubsection.6.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.6.2.2}Village}{18}{subsubsection.6.6.2.2}%
+\contentsline {section}{\numberline {6.7}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maitre\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Du\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jeux Class Reference}{18}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Member Function Documentation}{19}{subsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.1.1}CréeVillage()}{19}{subsubsection.6.7.1.1}%
+\contentsline {section}{\numberline {6.8}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sorciere Class Reference}{19}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{20}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Constructor \& Destructor Documentation}{20}{subsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}Sorciere()}{20}{subsubsection.6.8.2.1}%
+\contentsline {subsection}{\numberline {6.8.3}Member Function Documentation}{20}{subsection.6.8.3}%
+\contentsline {subsubsection}{\numberline {6.8.3.1}UtiliserPotions()}{20}{subsubsection.6.8.3.1}%
+\contentsline {subsection}{\numberline {6.8.4}Property Documentation}{21}{subsection.6.8.4}%
+\contentsline {subsubsection}{\numberline {6.8.4.1}PotionSoin}{21}{subsubsection.6.8.4.1}%
+\contentsline {subsubsection}{\numberline {6.8.4.2}PotionTuer}{21}{subsubsection.6.8.4.2}%
+\contentsline {section}{\numberline {6.9}Loup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Garou.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Villageois Class Reference}{21}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{22}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Constructor \& Destructor Documentation}{22}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}Villageois()}{22}{subsubsection.6.9.2.1}%
+\contentsline {subsection}{\numberline {6.9.3}Member Function Documentation}{22}{subsection.6.9.3}%
+\contentsline {subsubsection}{\numberline {6.9.3.1}Voter()}{22}{subsubsection.6.9.3.1}%
+\contentsline {subsection}{\numberline {6.9.4}Property Documentation}{23}{subsection.6.9.4}%
+\contentsline {subsubsection}{\numberline {6.9.4.1}EstVeillés}{23}{subsubsection.6.9.4.1}%
+\contentsline {subsubsection}{\numberline {6.9.4.2}EstVivant}{23}{subsubsection.6.9.4.2}%
+\contentsline {subsubsection}{\numberline {6.9.4.3}Id}{23}{subsubsection.6.9.4.3}%
+\contentsline {subsubsection}{\numberline {6.9.4.4}nom}{23}{subsubsection.6.9.4.4}%
+\contentsline {chapter}{\numberline {7}File Documentation}{25}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Cupidon.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{25}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{25}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Form1.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{25}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{26}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Lg.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{26}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{26}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.4}Maitre\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Du\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jeux.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{26}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{27}{subsection.7.4.1}%
+\contentsline {section}{\numberline {7.5}Sorciere.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{27}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Detailed Description}{27}{subsection.7.5.1}%
+\contentsline {section}{\numberline {7.6}Villageois.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{27}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{27}{subsection.7.6.1}%

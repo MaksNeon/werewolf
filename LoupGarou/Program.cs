@@ -6,7 +6,12 @@ using System.Windows.Forms;
 
 namespace LoupGarou
 {
-
+    /// <summary>
+    /// Projet  :   Loups-garoups
+    /// Fichier :   Program.cs
+    /// Date    :   21.05.2024
+    /// Auteurs :   Maksym Ptytsia, Oscar Calvo
+    /// </summary>
     internal static class Program
     {
 
@@ -16,14 +21,6 @@ namespace LoupGarou
         [STAThread]
         static void Main()
         {
-            //Villageois mateo = new Villageois("Mateo");
-            //Villageois Ismael = new Villageois("Ismael");
-            //Lg dario = new Lg("Dario");
-
-            //village.Add(mateo);
-            //village.Add(dario);
-            //village.Add(Ismael);
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoupGarou());

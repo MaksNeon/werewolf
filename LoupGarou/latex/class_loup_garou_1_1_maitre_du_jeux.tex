@@ -1,0 +1,62 @@
+\doxysection{Loup\+Garou.\+Maitre\+Du\+Jeux Class Reference}
+\hypertarget{class_loup_garou_1_1_maitre_du_jeux}{}\label{class_loup_garou_1_1_maitre_du_jeux}\index{LoupGarou.MaitreDuJeux@{LoupGarou.MaitreDuJeux}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_a5dd966e376c76858d72ff68272d89dd0}\label{class_loup_garou_1_1_maitre_du_jeux_a5dd966e376c76858d72ff68272d89dd0} 
+{\bfseries Maitre\+Du\+Jeux} ()
+\begin{DoxyCompactList}\small\item\em Constructeur pour \doxylink{class_loup_garou_1_1_maitre_du_jeux}{Maitre\+Du\+Jeux}. \end{DoxyCompactList}\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_af7ee9df9cbb289e8e0bee2984240b8e1}\label{class_loup_garou_1_1_maitre_du_jeux_af7ee9df9cbb289e8e0bee2984240b8e1} 
+void {\bfseries Start\+Game} ()
+\begin{DoxyCompactList}\small\item\em Démarre le jeu en appelant Jouer\+Tour. Démarre le jeu en appelant Jouer\+Tour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_loup_garou_1_1_maitre_du_jeux_a040b664f422bf5f0e8f4e58a89a70aaa}{Crée\+Village}} (List$<$ string $>$ Username)
+\begin{DoxyCompactList}\small\item\em Crée le village avec des rôles attribués aux joueurs à partir de la liste des noms d\textquotesingle{}utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_a6a6c31ae03c86d9a06939da205c5634b}\label{class_loup_garou_1_1_maitre_du_jeux_a6a6c31ae03c86d9a06939da205c5634b} 
+Binding\+List$<$ \mbox{\hyperlink{class_loup_garou_1_1_villageois}{Villageois}} $>$ {\bfseries Village} = new Binding\+List$<$\mbox{\hyperlink{class_loup_garou_1_1_villageois}{Villageois}}$>$()
+\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_a3d725d163d95676b23972d696b94f616}\label{class_loup_garou_1_1_maitre_du_jeux_a3d725d163d95676b23972d696b94f616} 
+List$<$ string $>$ {\bfseries username} = new List$<$string$>$()
+\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_a8ea4044fddeeb8b7f9a8b1deb368b64e}\label{class_loup_garou_1_1_maitre_du_jeux_a8ea4044fddeeb8b7f9a8b1deb368b64e} 
+Random {\bfseries random} = new Random()
+\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_aa9522dc6f17dce58b81cee8f217da39b}\label{class_loup_garou_1_1_maitre_du_jeux_aa9522dc6f17dce58b81cee8f217da39b} 
+bool {\bfseries Game\+End} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_a1f668f7d7b249b68a39bca6f32a93fbd}\label{class_loup_garou_1_1_maitre_du_jeux_a1f668f7d7b249b68a39bca6f32a93fbd} 
+Binding\+List$<$ \mbox{\hyperlink{class_loup_garou_1_1_villageois}{Villageois}} $>$ {\bfseries Get\+Village}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_ab83aefe3c858eab34014cd5e19759093}\label{class_loup_garou_1_1_maitre_du_jeux_ab83aefe3c858eab34014cd5e19759093} 
+bool {\bfseries Loupgauchkbox\+Tour}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_loup_garou_1_1_maitre_du_jeux_a040b664f422bf5f0e8f4e58a89a70aaa}\index{LoupGarou.MaitreDuJeux@{LoupGarou.MaitreDuJeux}!CréeVillage@{CréeVillage}}
+\index{CréeVillage@{CréeVillage}!LoupGarou.MaitreDuJeux@{LoupGarou.MaitreDuJeux}}
+\doxysubsubsection{\texorpdfstring{CréeVillage()}{CréeVillage()}}
+{\footnotesize\ttfamily \label{class_loup_garou_1_1_maitre_du_jeux_a040b664f422bf5f0e8f4e58a89a70aaa} 
+void Loup\+Garou.\+Maitre\+Du\+Jeux.\+Crée\+Village (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{Username}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crée le village avec des rôles attribués aux joueurs à partir de la liste des noms d\textquotesingle{}utilisateur. 
+
+Crée un village avec des rôles attribués à partir d\textquotesingle{}une liste de noms d\textquotesingle{}utilisateur. 
+\begin{DoxyParams}{Parameters}
+{\em Username} & Liste des noms d\textquotesingle{}utilisateur.\\
+\hline
+{\em Username} & Liste des noms d\textquotesingle{}utilisateur.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_maitre_du_jeux_8cs}{Maitre\+Du\+Jeux.\+cs}}\end{DoxyCompactItemize}

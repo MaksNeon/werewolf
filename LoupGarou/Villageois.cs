@@ -7,6 +7,17 @@ using System.Threading.Tasks;
 
 namespace LoupGarou
 {
+    /**
+     * @file Villageois.cs
+     * @brief Définition de la classe Villageois pour le jeu Loups-garous.
+     * @date 21.05.2024
+     * @authors Maksym Ptytsia, Oscar Calvo
+     */
+
+    /**
+     * @class Villageois
+     * @brief Représente un villageois dans le jeu.
+     */
     public class Villageois
     {
         private string _nom;
@@ -14,49 +25,68 @@ namespace LoupGarou
         private bool _Veille;
         private int _id;
 
-        /// <summary>
-        /// Constructeur d'un villageois
-        /// </summary>
-        /// <param name="nom"></param>
+        /**
+         * @brief Constructeur de la classe Villageois.
+         * @param nom Le nom du villageois.
+         */
         public Villageois(string nom)
         {
             this._nom = nom;
             this._Etat = true;
             this._Veille = false;
         }
-        /// <summary>
-        /// Methode pour se tuer
-        /// </summary>
+
+        /**
+         * @brief Méthode pour se tuer.
+         */
         public void Death()
         {
             this.EstVivant = false;
         }
 
+        /**
+         * @brief Propriété pour obtenir le nom du villageois.
+         * @return Le nom du villageois.
+         */
         public string nom
         {
             get { return _nom; }
         }
+
+        /**
+         * @brief Propriété pour vérifier si le villageois est vivant.
+         * @return true si le villageois est vivant, false sinon.
+         */
         public bool EstVivant
         {
             get { return this._Etat; }
             set { this._Etat = value; }
         }
+
+        /**
+         * @brief Propriété pour vérifier si le villageois est réveillé.
+         * @return true si le villageois est réveillé, false sinon.
+         */
         public bool EstVeillés
         {
             get { return this._Veille; }
             set { this._Veille = value; }
         }
+
+        /**
+         * @brief Propriété pour obtenir l'identifiant du villageois.
+         * @return L'identifiant du villageois.
+         */
         public int Id
         {
             get { return _id; }
         }
-        /// <summary>
-        /// Je crée un random qui va etre utilisé pour trouver l'index, pour crée le random j'utilise la taille de la liste donner en entré
-        /// Je crée un objet villageoissorti qui va etre la sorti de la fonction, je lui donne la valeur de l'bjet de la liste villageois avec l'index du random.
-        /// et je return le villageoissorti defini avant
-        /// </summary>
-        /// <param name="villageois">C'est une liste qui permets d'avoir la liste des joueur encore en vie c'est une liste de l'objet Villageois</param>
-        /// <returns>villageoissorti</returns>
+
+        /**
+         * @brief Le villageois vote pour éliminer un autre villageois au hasard.
+         * @param villageois C'est une liste qui permet d'avoir la liste des joueurs encore en vie, c'est une liste de l'objet Villageois.
+         * @return Le villageois choisi au hasard pour être éliminé, ou null si le villageois n'est pas vivant ou si la liste est vide.
+         */
         public Villageois Voter(BindingList<Villageois> villageois)
         {
             if (EstVivant && villageois.Count > 0)
@@ -68,6 +98,5 @@ namespace LoupGarou
             }
             return null;
         }
-
     }
 }

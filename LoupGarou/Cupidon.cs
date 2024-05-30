@@ -6,27 +6,37 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LoupGarou
-{    /// <summary>
-     /// Classe pour Cupidon
-     /// Calvo Oscar
-     /// </summary>
+{
+    /**
+     * @file Cupidon.cs
+     * @brief Définition de la classe Cupidon pour le jeu Loups-garous.
+     * @date 21.05.2024
+     * @authors Maksym Ptytsia, Oscar Calvo
+     */
+
+    /**
+     * @class Cupidon
+     * @brief Représente le personnage de Cupidon dans le jeu.
+     */
     public class Cupidon : Villageois
     {
         public List<Villageois> Amoureux = new List<Villageois>();
-        //Cupidon na pas de getter ou setter car il va definir avec une fonction les amoureux
+
+        /**
+         * @brief Constructeur de la classe Cupidon.
+         * @param nom Le nom de Cupidon.
+         */
         public Cupidon(string nom) : base(nom)
         {
-
         }
 
-
-        /// <summary>
-        /// Fonction Qui permet de designer les amoureux
-        /// </summary>
-        /// <param name="VillageVivant"></param>
-        /// <param name="index1"></param>
-        /// <param name="index2"></param>
-        /// <returns></returns>
+        /**
+         * @brief Fonction qui permet de désigner les amoureux.
+         * @param VillageVivant La liste des villageois vivants.
+         * @param index1 L'index du premier amoureux dans la liste des villageois vivants.
+         * @param index2 L'index du deuxième amoureux dans la liste des villageois vivants.
+         * @return La liste des deux villageois désignés comme amoureux.
+         */
         public List<Villageois> DesignerAmoureux(BindingList<Villageois> VillageVivant, int index1, int index2)
         {
             Villageois Amoureux1 = VillageVivant[index1];
@@ -35,19 +45,5 @@ namespace LoupGarou
             Amoureux.Add(Amoureux2);
             return Amoureux;
         }
-
-
-        //public void VoterAmoureux(List<Villageois> villageois)
-        //{
-        //    if (EstVivant && villageois.Count > 0)
-        //    {
-        //        Random rdm = new Random();
-        //        int indexRdm1 = rdm.Next(villageois.Count);
-        //        int indexRdm2 = rdm.Next(villageois.Count);
-        //        Villageois villageois1 = villageois[indexRdm1];
-        //        Villageois villageois2 = villageois[indexRdm2];
-        //        Amoureux amoureux = villageois1;
-        //    }
-        //}
     }
 }
